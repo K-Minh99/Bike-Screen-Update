@@ -3,11 +3,11 @@
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
   "version": "v1.1.5",
-  "build": 2026100605,
+  "build": 2026100606,
   "sub_protocol": 2,
-  "size": 2117520,
-  "sha256": "4376227e650099b00854d0dd0ec5ca55ab04627577968ec610abda54657fbaef",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/7e8a8fb14a57ae031312e434a2d0a2a90d41d73e/firmware.bin",
-  "released_at": "2026-10-06T15:48:35+00:00",
-  "notes": "v1.1.5: Continuous passive BLE reception, cached history file catalog, AP handoff and sleep race fixes, reduced chart/Wi-Fi/OTA memory, scan failure recovery, motion sampling isolated from display work. Host and browser tests passed; hardware verification pending."
+  "size": 2117632,
+  "sha256": "7d32d69f5d9f03210b2915b89b336af7a01f5f1e9e1101841734e098cb8215ae",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/2a6697bacaecfdd5066e3ccf12f432280c58ffe2/firmware.bin",
+  "released_at": "2026-10-06T15:51:36+00:00",
+  "notes": "v1.1.5: Continuous passive BLE and cached history maintenance; fixes false trip endings, mixed-screen data interruptions and AP/sleep handoff races. Lower chart/OTA/Wi-Fi memory, recoverable Wi-Fi scans, latest SUB snapshot held at AP acceptance, motion sampling isolated from display work. Build and host/browser tests passed; board verification pending."
 }
