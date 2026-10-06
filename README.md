@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.1.4**, build **2026100604**.
-- Binary size: **2112128 bytes**.
+- Firmware: **v1.1.5**, build **2026100605**.
+- Binary size: **2117520 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-Fix ignored TAP_SRC SINGLE flags 0x21/0x29/0x2A. Pair distinct native single taps 120-450 ms apart to open AP, retain hardware double taps and vibration gating, and coalesce held flags/poll-IRQ duplicates.
+v1.1.5: Continuous passive BLE reception, cached history file catalog, AP handoff and sleep race fixes, reduced chart/Wi-Fi/OTA memory, scan failure recovery, motion sampling isolated from display work. Host and browser tests passed; hardware verification pending.
 
 AP Display settings let you choose any of the four existing Compact/Trend
 screens, then choose timed cycling or single-tap navigation exclusively.
@@ -35,7 +35,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `95e4f4e50f128a61fa38e93ee6e0d6e229909faf553f38da0f7dddd6116b2723`.
+Current binary SHA-256: `4376227e650099b00854d0dd0ec5ca55ab04627577968ec610abda54657fbaef`.
 
 This build was compiled and checked with host/browser tests. Successful OTA
 and Wi-Fi/AP behavior still need confirmation on the actual board.
