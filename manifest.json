@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.1.2",
-  "build": 2026100602,
+  "version": "v1.1.3",
+  "build": 2026100603,
   "sub_protocol": 2,
-  "size": 2110960,
-  "sha256": "44ce226a1707a7531eb36cb0c117d04d1f7c27e2b4f631cc94d3c9b707a0ee1e",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/e05305fa700b01ab5f882260a65755140e83556f/firmware.bin",
-  "released_at": "2026-10-06T14:13:24+00:00",
-  "notes": "Selectable Compact/Trend screens with exclusive timed or single-tap navigation; on-demand GitHub OTA."
+  "size": 2111728,
+  "sha256": "6d721778ea4b6f322ccb0257200656450f5522523eebba78399aa8fe0f387079",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/d3586c9793ee645c128e1fa0c93261a1e45b9d63/firmware.bin",
+  "released_at": "2026-10-06T14:49:14+00:00",
+  "notes": "Fix tap gating: preserve stability before a hit for a bounded double-tap window, reject sustained/repeated vibration, and report native tap events. Sensor threshold remains 1000 mg."
 }
