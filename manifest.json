@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.1.6",
-  "build": 2026100607,
+  "version": "v1.1.7",
+  "build": 2026100608,
   "sub_protocol": 2,
-  "size": 2118416,
-  "sha256": "50b0d58f9a69d3e09291cabc2bb0e87c28d3cc4bbbcddfc8952965084f1b3bcd",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/adc0b4e11a4549be50e6636e83c1b31273bdc54b/firmware.bin",
-  "released_at": "2026-10-06T16:23:32+00:00",
-  "notes": "Replace the 6-second Arduino asynchronous Wi-Fi scan with a fully initialized native SDK worker scan and bounded result buffers. Lower native tap threshold to 625 mg, poll fallback at 20 ms, fix delayed SINGLE cancellation and log navigation mode/refusal reasons. Host, LVGL, lifecycle, settings and OTA web checks passed; Wi-Fi and tap sensitivity still require board verification."
+  "size": 2119104,
+  "sha256": "3d82d5f3f85429d34280250ebcfedd72ede972f5fb642dc645089c30c08dcecf",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/17ce7fec3c974a4928b000b34616fa5ff1df1622/firmware.bin",
+  "released_at": "2026-10-06T16:43:41+00:00",
+  "notes": "Fix empty Wi-Fi choices after a successful scan: use one Arduino SCAN_DONE result owner with a fully initialized native asynchronous scan, explicit event/copy/timeout diagnostics, and cleanup after retries. Reproduced the previous 17-found/0-read race using actual installed Arduino handlers and verified production status JSON populates the AP dropdown. Main v1.1.6 tap fixes retained. Build and host/browser checks passed; hardware confirmation pending."
 }
