@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.1.1",
-  "build": 2026100601,
+  "version": "v1.1.2",
+  "build": 2026100602,
   "sub_protocol": 2,
-  "size": 2107088,
-  "sha256": "0f661fcfbe8cb5448a712c48df8248eec828703f8fcd75cbd8eb90f5b5d80294",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/5d5ae6b9bd8e64ae5d4f665ce729252dc8f9e229/firmware.bin",
-  "released_at": "2026-10-06T10:59:15+00:00",
-  "notes": "AP-only on-demand Wi-Fi and GitHub OTA; progress, ETA and manual upload fallback."
+  "size": 2110960,
+  "sha256": "44ce226a1707a7531eb36cb0c117d04d1f7c27e2b4f631cc94d3c9b707a0ee1e",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/e05305fa700b01ab5f882260a65755140e83556f/firmware.bin",
+  "released_at": "2026-10-06T14:13:24+00:00",
+  "notes": "Selectable Compact/Trend screens with exclusive timed or single-tap navigation; on-demand GitHub OTA."
 }
