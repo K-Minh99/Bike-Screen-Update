@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.1.7**, build **2026100608**.
-- Binary size: **2119104 bytes**.
+- Firmware: **v1.1.8**, build **2026100701**.
+- Binary size: **2156704 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-Fix empty Wi-Fi choices after a successful scan: use one Arduino SCAN_DONE result owner with a fully initialized native asynchronous scan, explicit event/copy/timeout diagnostics, and cleanup after retries. Reproduced the previous 17-found/0-read race using actual installed Arduino handlers and verified production status JSON populates the AP dropdown. Main v1.1.6 tap fixes retained. Build and host/browser checks passed; hardware confirmation pending.
+Make the end-of-trip summary readable with explicit bright text on black and rounded-screen safe margins. Render pending summary directly in the LVGL task; start the full 10-second AP review window only after its first frame is visible. Verified delayed UI, AP priority, new-trip cancellation and real Compact/Trend LVGL memory/geometry. New concept styles are preview images only. Board confirmation pending.
 
 AP Display settings let you choose any of the four existing Compact/Trend
 screens, then choose timed cycling or single-tap navigation exclusively.
@@ -35,7 +35,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `3d82d5f3f85429d34280250ebcfedd72ede972f5fb642dc645089c30c08dcecf`.
+Current binary SHA-256: `aca284e6b5c2ddd407cdc1e515404b7df37082bb1837469bff86386d73cc0978`.
 
 This build was compiled and checked with host/browser tests. Successful OTA
 and Wi-Fi/AP behavior still need confirmation on the actual board.

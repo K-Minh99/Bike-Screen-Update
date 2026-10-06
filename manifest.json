@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.1.7",
-  "build": 2026100608,
+  "version": "v1.1.8",
+  "build": 2026100701,
   "sub_protocol": 2,
-  "size": 2119104,
-  "sha256": "3d82d5f3f85429d34280250ebcfedd72ede972f5fb642dc645089c30c08dcecf",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/17ce7fec3c974a4928b000b34616fa5ff1df1622/firmware.bin",
-  "released_at": "2026-10-06T16:43:41+00:00",
-  "notes": "Fix empty Wi-Fi choices after a successful scan: use one Arduino SCAN_DONE result owner with a fully initialized native asynchronous scan, explicit event/copy/timeout diagnostics, and cleanup after retries. Reproduced the previous 17-found/0-read race using actual installed Arduino handlers and verified production status JSON populates the AP dropdown. Main v1.1.6 tap fixes retained. Build and host/browser checks passed; hardware confirmation pending."
+  "size": 2156704,
+  "sha256": "aca284e6b5c2ddd407cdc1e515404b7df37082bb1837469bff86386d73cc0978",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/b4721d026312d99540adfe6ce7dc66460331a812/firmware.bin",
+  "released_at": "2026-10-06T17:05:39+00:00",
+  "notes": "Make the end-of-trip summary readable with explicit bright text on black and rounded-screen safe margins. Render pending summary directly in the LVGL task; start the full 10-second AP review window only after its first frame is visible. Verified delayed UI, AP priority, new-trip cancellation and real Compact/Trend LVGL memory/geometry. New concept styles are preview images only. Board confirmation pending."
 }
