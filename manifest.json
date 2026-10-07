@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.2",
-  "build": 2026100704,
+  "version": "v1.2.3",
+  "build": 2026100705,
   "sub_protocol": 2,
-  "size": 2476736,
-  "sha256": "6e8fac87fca2803456062e8eaef53fbe72b372b1c86f449b0275879c3bf0f291",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/cb3214e9134bb06dab5f06656c6e3751273df397/firmware.bin",
-  "released_at": "2026-10-07T04:17:04+00:00",
-  "notes": "Main v1.2.2: releases idle BLE and sensor task stacks in AP for secure GitHub certificate verification; adds 64 KiB TLS preflight and memory diagnostics; restores data tasks after AP timeout."
+  "size": 2476720,
+  "sha256": "69f7b0b7736590ce68103f56574ef99032c40644fb5ceec41eacd7fd3e99ea78",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/63ff3db22c60cb29c1b3ba463c62b97ad4c6d210/firmware.bin",
+  "released_at": "2026-10-07T05:02:26+00:00",
+  "notes": "Main v1.2.3: trip duration and existing sensor alarms continue when RTC reports oscillator stop, STOP or I2C errors; keeps invalid calendar labels and read-only RTC boot; retains v1.2.2 secure OTA RAM fixes."
 }
