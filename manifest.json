@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.4",
-  "build": 2026100706,
+  "version": "v1.2.5",
+  "build": 2026100707,
   "sub_protocol": 2,
-  "size": 2477952,
-  "sha256": "6e5a856b595f39baa6c8ca16541153f0fe70a23992cd19a6cf7dfc67a146027f",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/22f9c98342eae9b24a392a1320c43d0b049bef2f/firmware.bin",
-  "released_at": "2026-10-07T06:19:29+00:00",
-  "notes": "Main v1.2.4: starts BLE before intro, restores history in a temporary boot task, previews fresh SUB values while recovery completes, publishes live UI before flash storage and adds boot/history latency logs; keeps 2s intro hold and 1s transition."
+  "size": 2478480,
+  "sha256": "ffefe1c0414f9d2ea09e82f9f822c047b4edd505c47507875361d20afa74eff7",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/b21d8a506fb9b3497df11fc85d2afc4dfb62fb8f/firmware.bin",
+  "released_at": "2026-10-07T06:44:41+00:00",
+  "notes": "Batch uploaded intro and boot history reads; preserve RGB565 colors and per-row CRC validation; add separate TFT and intro phase timing logs."
 }
