@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.7",
-  "build": 2026100709,
+  "version": "v1.2.8",
+  "build": 2026100710,
   "sub_protocol": 2,
-  "size": 2502496,
-  "sha256": "2559e02c20d5d18a9beba5bc5c9d580629484801e801de340fcc29d4908e7df0",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/57045460bd63f986e7371f28a88300e50f28f998/firmware.bin",
-  "released_at": "2026-10-07T09:43:19+00:00",
-  "notes": "AP history redesign: automatic trip overview with recorded RTC axis, separate daily charts, touch pinch/drag and stored-point magnifier, selected-channel summaries, range detail and dated CSV. Preserves extrema and missing intervals; rendering stays offline in the browser."
+  "size": 2504080,
+  "sha256": "979d0a208c2967157f6cad1f41af84ae084806daedcf4bc221c56246d2ffd5eb",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/4854c47fb48a762620e5534782ef90fca63633ba/firmware.bin",
+  "released_at": "2026-10-07T10:02:42+00:00",
+  "notes": "History point readout: tapping the chart immediately shows the recorded voltage/temperature and RTC timestamp in an on-chart floating box. Daily charts show the nearest selected channel mean and date. Missing intervals and unknown RTC are labelled explicitly; touch zoom/pan and detailed cards are retained."
 }
