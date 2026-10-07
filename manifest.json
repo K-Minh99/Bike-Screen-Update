@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.9",
-  "build": 2026100711,
+  "version": "v1.2.10",
+  "build": 2026100712,
   "sub_protocol": 2,
-  "size": 2505712,
-  "sha256": "67804afc0959f620fee8b633b3e500dbcbc079c8668d8b54a89ecc450f631c11",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/53abc518412d536599c3431cdae65c97ab0beb6a/firmware.bin",
-  "released_at": "2026-10-07T10:32:49+00:00",
-  "notes": "History cursor drag: select a point, then drag the dot or vertical cursor to inspect stored values continuously while keeping its channel and chart position. Trip readouts show HH:mm:ss only. Daily drag, no-data gaps, pinch zoom and chart panning are preserved."
+  "size": 2505120,
+  "sha256": "94f1f409f97b410baf5f88d68e1b2dd0d09ae54530b34e121aa58f665f97eced",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/499571cfe6af3fc0634a77dca9e4afad6a44dc7b/firmware.bin",
+  "released_at": "2026-10-07T10:39:37+00:00",
+  "notes": "Removed the circular chart magnifier in both trip and daily history. The voltage/time readout, selected-point cursor, continuous cursor drag, chart panning and pinch zoom remain available."
 }

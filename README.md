@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.2.9**, build **2026100711**.
-- Binary size: **2505712 bytes**.
+- Firmware: **v1.2.10**, build **2026100712**.
+- Binary size: **2505120 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-History cursor drag: select a point, then drag the dot or vertical cursor to inspect stored values continuously while keeping its channel and chart position. Trip readouts show HH:mm:ss only. Daily drag, no-data gaps, pinch zoom and chart panning are preserved.
+Removed the circular chart magnifier in both trip and daily history. The voltage/time readout, selected-point cursor, continuous cursor drag, chart panning and pinch zoom remain available.
 
 AP Display settings let you choose any of 34 live screens: Compact/Trend plus
 15 new pairs, including calendar, clocks, instruments and voltage dashboards.
@@ -36,7 +36,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `67804afc0959f620fee8b633b3e500dbcbc079c8668d8b54a89ecc450f631c11`.
+Current binary SHA-256: `94f1f409f97b410baf5f88d68e1b2dd0d09ae54530b34e121aa58f665f97eced`.
 
 This build was compiled and checked with host/browser tests. Successful OTA
 and Wi-Fi/AP behavior still need confirmation on the actual board.
