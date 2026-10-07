@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.5",
-  "build": 2026100707,
+  "version": "v1.2.6",
+  "build": 2026100708,
   "sub_protocol": 2,
-  "size": 2478480,
-  "sha256": "ffefe1c0414f9d2ea09e82f9f822c047b4edd505c47507875361d20afa74eff7",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/b21d8a506fb9b3497df11fc85d2afc4dfb62fb8f/firmware.bin",
-  "released_at": "2026-10-07T06:44:41+00:00",
-  "notes": "Batch uploaded intro and boot history reads; preserve RGB565 colors and per-row CRC validation; add separate TFT and intro phase timing logs."
+  "size": 2479408,
+  "sha256": "e7245dc6b9dcefa52bf3ce8afcac97e0853f31d1e56720e4b79549fec54bb73b",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/718e2aab127e43c85c79afd49223aaaef4e66372/firmware.bin",
+  "released_at": "2026-10-07T07:52:04+00:00",
+  "notes": "Connected AP freezes the final Setting frame and releases the 24 KiB LVGL arena, display buffer, LVGL/ACC/Arduino loop tasks; preserve no-client timeout, web settings/history, secure OTA and reset trip continuity."
 }
