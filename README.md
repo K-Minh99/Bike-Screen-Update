@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.2.0**, build **2026100702**.
-- Binary size: **2471680 bytes**.
+- Firmware: **v1.2.1**, build **2026100703**.
+- Binary size: **2476000 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-Main v1.2.0: 15 new live UI pairs, 34 individually selectable screens, calendar/clock/instrument/voltage layouts, offline AP previews, per-screen timing or single-tap navigation, preserved settings and alarm priority.
+Main v1.2.1: Wi-Fi connection success/failure popups and completion polling; reclaim 21 KiB during AP for verified GitHub HTTPS; clearer TLS errors and memory checks; RTC OS/STOP/calendar validation, verified register writes, read-only boot and backup-power diagnostics. All 34 UI screens retained.
 
 AP Display settings let you choose any of 34 live screens: Compact/Trend plus
 15 new pairs, including calendar, clocks, instruments and voltage dashboards.
@@ -36,7 +36,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `6ef1f6c16e4424c9d2e7246049dda3629ef84f917a8f9ddf2a1c70a316791383`.
+Current binary SHA-256: `05bfde8e0dec668a5dfbd61de81656216cffc92458aac9240158f457a48db41c`.
 
 This build was compiled and checked with host/browser tests. Successful OTA
 and Wi-Fi/AP behavior still need confirmation on the actual board.

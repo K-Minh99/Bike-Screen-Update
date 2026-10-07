@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.0",
-  "build": 2026100702,
+  "version": "v1.2.1",
+  "build": 2026100703,
   "sub_protocol": 2,
-  "size": 2471680,
-  "sha256": "6ef1f6c16e4424c9d2e7246049dda3629ef84f917a8f9ddf2a1c70a316791383",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/fe4a76d924454701173a9291521edcb17af35d19/firmware.bin",
-  "released_at": "2026-10-06T17:53:36+00:00",
-  "notes": "Main v1.2.0: 15 new live UI pairs, 34 individually selectable screens, calendar/clock/instrument/voltage layouts, offline AP previews, per-screen timing or single-tap navigation, preserved settings and alarm priority."
+  "size": 2476000,
+  "sha256": "05bfde8e0dec668a5dfbd61de81656216cffc92458aac9240158f457a48db41c",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/e88f084865d0b20b8be87301eca6951adb150b3d/firmware.bin",
+  "released_at": "2026-10-07T03:52:27+00:00",
+  "notes": "Main v1.2.1: Wi-Fi connection success/failure popups and completion polling; reclaim 21 KiB during AP for verified GitHub HTTPS; clearer TLS errors and memory checks; RTC OS/STOP/calendar validation, verified register writes, read-only boot and backup-power diagnostics. All 34 UI screens retained."
 }
