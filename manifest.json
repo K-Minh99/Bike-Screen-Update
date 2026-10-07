@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.8",
-  "build": 2026100710,
+  "version": "v1.2.9",
+  "build": 2026100711,
   "sub_protocol": 2,
-  "size": 2504080,
-  "sha256": "979d0a208c2967157f6cad1f41af84ae084806daedcf4bc221c56246d2ffd5eb",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/4854c47fb48a762620e5534782ef90fca63633ba/firmware.bin",
-  "released_at": "2026-10-07T10:02:42+00:00",
-  "notes": "History point readout: tapping the chart immediately shows the recorded voltage/temperature and RTC timestamp in an on-chart floating box. Daily charts show the nearest selected channel mean and date. Missing intervals and unknown RTC are labelled explicitly; touch zoom/pan and detailed cards are retained."
+  "size": 2505712,
+  "sha256": "67804afc0959f620fee8b633b3e500dbcbc079c8668d8b54a89ecc450f631c11",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/53abc518412d536599c3431cdae65c97ab0beb6a/firmware.bin",
+  "released_at": "2026-10-07T10:32:49+00:00",
+  "notes": "History cursor drag: select a point, then drag the dot or vertical cursor to inspect stored values continuously while keeping its channel and chart position. Trip readouts show HH:mm:ss only. Daily drag, no-data gaps, pinch zoom and chart panning are preserved."
 }
