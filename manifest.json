@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.6",
-  "build": 2026100708,
+  "version": "v1.2.7",
+  "build": 2026100709,
   "sub_protocol": 2,
-  "size": 2479408,
-  "sha256": "e7245dc6b9dcefa52bf3ce8afcac97e0853f31d1e56720e4b79549fec54bb73b",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/718e2aab127e43c85c79afd49223aaaef4e66372/firmware.bin",
-  "released_at": "2026-10-07T07:52:04+00:00",
-  "notes": "Connected AP freezes the final Setting frame and releases the 24 KiB LVGL arena, display buffer, LVGL/ACC/Arduino loop tasks; preserve no-client timeout, web settings/history, secure OTA and reset trip continuity."
+  "size": 2502496,
+  "sha256": "2559e02c20d5d18a9beba5bc5c9d580629484801e801de340fcc29d4908e7df0",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/57045460bd63f986e7371f28a88300e50f28f998/firmware.bin",
+  "released_at": "2026-10-07T09:43:19+00:00",
+  "notes": "AP history redesign: automatic trip overview with recorded RTC axis, separate daily charts, touch pinch/drag and stored-point magnifier, selected-channel summaries, range detail and dated CSV. Preserves extrema and missing intervals; rendering stays offline in the browser."
 }
