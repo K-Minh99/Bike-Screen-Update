@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.1",
-  "build": 2026100703,
+  "version": "v1.2.2",
+  "build": 2026100704,
   "sub_protocol": 2,
-  "size": 2476000,
-  "sha256": "05bfde8e0dec668a5dfbd61de81656216cffc92458aac9240158f457a48db41c",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/e88f084865d0b20b8be87301eca6951adb150b3d/firmware.bin",
-  "released_at": "2026-10-07T03:52:27+00:00",
-  "notes": "Main v1.2.1: Wi-Fi connection success/failure popups and completion polling; reclaim 21 KiB during AP for verified GitHub HTTPS; clearer TLS errors and memory checks; RTC OS/STOP/calendar validation, verified register writes, read-only boot and backup-power diagnostics. All 34 UI screens retained."
+  "size": 2476736,
+  "sha256": "6e8fac87fca2803456062e8eaef53fbe72b372b1c86f449b0275879c3bf0f291",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/cb3214e9134bb06dab5f06656c6e3751273df397/firmware.bin",
+  "released_at": "2026-10-07T04:17:04+00:00",
+  "notes": "Main v1.2.2: releases idle BLE and sensor task stacks in AP for secure GitHub certificate verification; adds 64 KiB TLS preflight and memory diagnostics; restores data tasks after AP timeout."
 }
