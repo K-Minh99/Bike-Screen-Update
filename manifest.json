@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.13",
-  "build": 2026100803,
+  "version": "v1.2.14",
+  "build": 2026100804,
   "sub_protocol": 2,
-  "size": 2507680,
-  "sha256": "ec7617604b5d0b12451a588b4eb790cfc5a0984e5bcd29b3a6251cef9bfd2d65",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/60631163d7b225cb20c84cb36d06a5e1de0c58d4/firmware.bin",
-  "released_at": "2026-10-08T10:27:09+00:00",
-  "notes": "AP entry: stable double tap opens a local prompt, the sensor then waits for a fresh 300 ms quiet interval and shows a ready state. A new single tap begun within the following visible 1-second window confirms AP; first-gesture ringing or residual native flags cannot self-confirm. The prompt closes after 5 seconds without settling. BLE remains active and Wi-Fi off until confirmation."
+  "size": 2507744,
+  "sha256": "4eab345005f4a885da0976f3b0eaa6b85581711b9cecb9cc50a5ec29042e287d",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/1fd89df70b9f198535d2207229c34ae4aac85566/firmware.bin",
+  "released_at": "2026-10-08T10:34:32+00:00",
+  "notes": "AP confirmation accepts a fresh tap even when one physical hit yields paired native SINGLE flags; the first flag must begin in the visible 1s window."
 }
