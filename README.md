@@ -2,25 +2,25 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.2.12**, build **2026100802**.
-- Binary size: **2506736 bytes**.
+- Firmware: **v1.2.13**, build **2026100803**.
+- Binary size: **2507680 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-Fix tap cancellation observed on Main: after the first LIS2DW12 SINGLE flag, allow the second flag through up to 320 ms of continuous mount vibration while keeping the 550 ms gesture deadline. Sustained vibration before native tap or after completion remains gated. AP still requires two separate double-tap gestures with 5-second confirmation.
+AP entry: stable double tap opens a local prompt, the sensor then waits for a fresh 300 ms quiet interval and shows a ready state. A new single tap begun within the following visible 1-second window confirms AP; first-gesture ringing or residual native flags cannot self-confirm. The prompt closes after 5 seconds without settling. BLE remains active and Wi-Fi off until confirmation.
 
 AP Display settings let you choose any of 34 live screens: Compact/Trend plus
 15 new pairs, including calendar, clocks, instruments and voltage dashboards.
 Mix screens across styles, then choose timed cycling or single-tap navigation.
 Timed mode uses per-screen durations (Compact 5/5 seconds; all other pairs 5/10 seconds). Tap mode
 holds the current screen until a valid single tap while the bike is stable.
-While stable, double tap to show a local 5-second confirmation, then double tap
-again to open AP. Allow about one second between the two gesture groups;
-the initial stable baseline is preserved through valid tap cooldown. Wi-Fi
-stays off and BLE continues during confirmation. If it expires, the same page
-remains visible. Existing settings are preserved during migration.
+While stable, double tap to show a local confirmation prompt. When vibration
+settles and the display says it is ready, begin one fresh single tap within one
+second to open AP. The prompt closes after five seconds if vibration never
+settles. Wi-Fi stays off and BLE continues until confirmation; a timeout
+restores the same page. Existing settings are preserved during migration.
 
 ## Update
 
@@ -40,7 +40,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `4b76f1c078713c476176349f8fb29c7b154890d4e134a2e881cc3c4ecbff2b64`.
+Current binary SHA-256: `ec7617604b5d0b12451a588b4eb790cfc5a0984e5bcd29b3a6251cef9bfd2d65`.
 
 This build was compiled and checked with host/browser tests. Successful OTA
 and Wi-Fi/AP behavior still need confirmation on the actual board.
