@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.11",
-  "build": 2026100801,
+  "version": "v1.2.12",
+  "build": 2026100802,
   "sub_protocol": 2,
-  "size": 2506720,
-  "sha256": "5717ca3188f8b91c86baf293a7255e35c1dece410fb4a69c8cae90a3c676a49e",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/b8120f486c85f6bc788f947942f9262bfb4c52c1/firmware.bin",
-  "released_at": "2026-10-08T08:18:39+00:00",
-  "notes": "Require two separate double-tap gestures to open AP: first shows a local 5-second confirmation with Wi-Fi off and BLE active; second confirms. Preserve qualified stability through 1-second tap cooldown; timeout returns to the current page. Keep AUTO/SINGLE navigation and protect the trip-summary confirmation window."
+  "size": 2506736,
+  "sha256": "4b76f1c078713c476176349f8fb29c7b154890d4e134a2e881cc3c4ecbff2b64",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/ae10a337d8fe1d71077b8f8bef14e957613f06fa/firmware.bin",
+  "released_at": "2026-10-08T09:12:07+00:00",
+  "notes": "Fix tap cancellation observed on Main: after the first LIS2DW12 SINGLE flag, allow the second flag through up to 320 ms of continuous mount vibration while keeping the 550 ms gesture deadline. Sustained vibration before native tap or after completion remains gated. AP still requires two separate double-tap gestures with 5-second confirmation."
 }

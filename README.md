@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.2.11**, build **2026100801**.
-- Binary size: **2506720 bytes**.
+- Firmware: **v1.2.12**, build **2026100802**.
+- Binary size: **2506736 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-Require two separate double-tap gestures to open AP: first shows a local 5-second confirmation with Wi-Fi off and BLE active; second confirms. Preserve qualified stability through 1-second tap cooldown; timeout returns to the current page. Keep AUTO/SINGLE navigation and protect the trip-summary confirmation window.
+Fix tap cancellation observed on Main: after the first LIS2DW12 SINGLE flag, allow the second flag through up to 320 ms of continuous mount vibration while keeping the 550 ms gesture deadline. Sustained vibration before native tap or after completion remains gated. AP still requires two separate double-tap gestures with 5-second confirmation.
 
 AP Display settings let you choose any of 34 live screens: Compact/Trend plus
 15 new pairs, including calendar, clocks, instruments and voltage dashboards.
@@ -40,7 +40,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `5717ca3188f8b91c86baf293a7255e35c1dece410fb4a69c8cae90a3c676a49e`.
+Current binary SHA-256: `4b76f1c078713c476176349f8fb29c7b154890d4e134a2e881cc3c4ecbff2b64`.
 
 This build was compiled and checked with host/browser tests. Successful OTA
 and Wi-Fi/AP behavior still need confirmation on the actual board.
