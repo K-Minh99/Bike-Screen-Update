@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.10",
-  "build": 2026100712,
+  "version": "v1.2.11",
+  "build": 2026100801,
   "sub_protocol": 2,
-  "size": 2505120,
-  "sha256": "94f1f409f97b410baf5f88d68e1b2dd0d09ae54530b34e121aa58f665f97eced",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/499571cfe6af3fc0634a77dca9e4afad6a44dc7b/firmware.bin",
-  "released_at": "2026-10-07T10:39:37+00:00",
-  "notes": "Removed the circular chart magnifier in both trip and daily history. The voltage/time readout, selected-point cursor, continuous cursor drag, chart panning and pinch zoom remain available."
+  "size": 2506720,
+  "sha256": "5717ca3188f8b91c86baf293a7255e35c1dece410fb4a69c8cae90a3c676a49e",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/b8120f486c85f6bc788f947942f9262bfb4c52c1/firmware.bin",
+  "released_at": "2026-10-08T08:18:39+00:00",
+  "notes": "Require two separate double-tap gestures to open AP: first shows a local 5-second confirmation with Wi-Fi off and BLE active; second confirms. Preserve qualified stability through 1-second tap cooldown; timeout returns to the current page. Keep AUTO/SINGLE navigation and protect the trip-summary confirmation window."
 }
