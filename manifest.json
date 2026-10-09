@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.15",
-  "build": 2026100901,
+  "version": "v1.2.16",
+  "build": 2026100902,
   "sub_protocol": 2,
-  "size": 2507824,
-  "sha256": "9be840bb25d85fa84d9962c2e84c1e25db46942f8f6482b6b69adf7bae9605c5",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/21e3d819fd7f200f71ed21d2d79562886232a55e/firmware.bin",
-  "released_at": "2026-10-09T04:04:38+00:00",
-  "notes": "Keep the current Compact or Trend page when motion wakes the backlight during an active trip; restart that page timer."
+  "size": 2508160,
+  "sha256": "536bab98862ec38a69c91886083c2e7ea039777dbc6665049fcc035c9b9d2bed",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/6d008ecd25dc4a88e65751ce59c3d1110d9871c6/firmware.bin",
+  "released_at": "2026-10-09T07:05:56+00:00",
+  "notes": "Hold expired previous-trip history through an active AP review/download session; keep the five-minute clock running and delete after AP exit."
 }
