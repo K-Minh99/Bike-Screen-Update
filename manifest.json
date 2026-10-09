@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.14",
-  "build": 2026100804,
+  "version": "v1.2.15",
+  "build": 2026100901,
   "sub_protocol": 2,
-  "size": 2507744,
-  "sha256": "4eab345005f4a885da0976f3b0eaa6b85581711b9cecb9cc50a5ec29042e287d",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/1fd89df70b9f198535d2207229c34ae4aac85566/firmware.bin",
-  "released_at": "2026-10-08T10:34:32+00:00",
-  "notes": "AP confirmation accepts a fresh tap even when one physical hit yields paired native SINGLE flags; the first flag must begin in the visible 1s window."
+  "size": 2507824,
+  "sha256": "9be840bb25d85fa84d9962c2e84c1e25db46942f8f6482b6b69adf7bae9605c5",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/21e3d819fd7f200f71ed21d2d79562886232a55e/firmware.bin",
+  "released_at": "2026-10-09T04:04:38+00:00",
+  "notes": "Keep the current Compact or Trend page when motion wakes the backlight during an active trip; restart that page timer."
 }
