@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.2.32**, build **2026112601**.
-- Binary size: **2544880 bytes**.
+- Firmware: **v1.2.33**, build **2026112602**.
+- Binary size: **2544848 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-1200 mAh battery display tuning: stable charger-done status confirms 100 percent; charging percentage pace is scaled for the smaller cell and battery diagnostics are expanded.
+TPMS display refresh fix: every decoded pressure or temperature change now reaches the screen, including gradual 0.01 bar steps. Pressure decoding and the 10-minute no-signal timeout are unchanged.
 
 AP Display settings let you choose any of 34 live screens: Compact/Trend plus
 15 new pairs, including calendar, clocks, instruments and voltage dashboards.
@@ -44,7 +44,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `c27b771335a207349c0d2be38a1ce72115b08a3048977c90e82ae6202039a3db`.
+Current binary SHA-256: `da1c59cd40797bfc69e525e46cf4a48e221577640780c35be4717649dac83159`.
 
 This build was compiled for Main. Successful OTA and Wi-Fi/AP behavior still
 need confirmation on the actual board.
