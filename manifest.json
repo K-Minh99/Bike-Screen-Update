@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.33",
-  "build": 2026112602,
+  "version": "v1.2.34",
+  "build": 2026112603,
   "sub_protocol": 2,
-  "size": 2544848,
-  "sha256": "da1c59cd40797bfc69e525e46cf4a48e221577640780c35be4717649dac83159",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/ea0f113c02beee001ce55073349de526d36a18a9/firmware.bin",
-  "released_at": "2026-11-25T17:58:36+00:00",
-  "notes": "TPMS display refresh fix: every decoded pressure or temperature change now reaches the screen, including gradual 0.01 bar steps. Pressure decoding and the 10-minute no-signal timeout are unchanged."
+  "size": 2546880,
+  "sha256": "56a90b8c40da6952799022691a6a140bda9ed0add4d23e92fce0df3040904fa5",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/44593e4b1c69dd204fb47997c2be99521d43e543/firmware.bin",
+  "released_at": "2026-11-25T18:35:31+00:00",
+  "notes": "TPMS parked display: keep the last pressure, temperature and sensor battery dim after a trip; parked wake-ups refresh those values without marking them live. Each tire returns to normal on a fresh packet in the current trip; NO SIG follows 10 minutes of actual BLE scanning without a packet. AP and deep sleep do not advance that timer."
 }

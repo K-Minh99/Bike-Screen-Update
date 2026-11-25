@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.2.33**, build **2026112602**.
-- Binary size: **2544848 bytes**.
+- Firmware: **v1.2.34**, build **2026112603**.
+- Binary size: **2546880 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-TPMS display refresh fix: every decoded pressure or temperature change now reaches the screen, including gradual 0.01 bar steps. Pressure decoding and the 10-minute no-signal timeout are unchanged.
+TPMS parked display: keep the last pressure, temperature and sensor battery dim after a trip; parked wake-ups refresh those values without marking them live. Each tire returns to normal on a fresh packet in the current trip; NO SIG follows 10 minutes of actual BLE scanning without a packet. AP and deep sleep do not advance that timer.
 
 AP Display settings let you choose any of 34 live screens: Compact/Trend plus
 15 new pairs, including calendar, clocks, instruments and voltage dashboards.
@@ -44,7 +44,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `da1c59cd40797bfc69e525e46cf4a48e221577640780c35be4717649dac83159`.
+Current binary SHA-256: `56a90b8c40da6952799022691a6a140bda9ed0add4d23e92fce0df3040904fa5`.
 
 This build was compiled for Main. Successful OTA and Wi-Fi/AP behavior still
 need confirmation on the actual board.
