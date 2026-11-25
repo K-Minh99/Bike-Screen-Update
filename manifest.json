@@ -2,12 +2,12 @@
   "schema": 1,
   "project": "TPMS",
   "board": "screenBike-esp32-8mb",
-  "version": "v1.2.31",
-  "build": 2026112501,
+  "version": "v1.2.32",
+  "build": 2026112601,
   "sub_protocol": 2,
-  "size": 2544784,
-  "sha256": "1d2eeeb2aabe1af4b98a315d0a52ff26bff26ab68bc9d82954df904c9dcfa3db",
-  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/211f773ec516bb64d001e797c42bec5dff260ea8/firmware.bin",
-  "released_at": "2026-11-25T15:52:38+00:00",
-  "notes": "AP opens on battery during a trip and its 10-second summary. Parked access still needs the charger. Tire pressure and AP alarm limits can be displayed in bar or PSI."
+  "size": 2544880,
+  "sha256": "c27b771335a207349c0d2be38a1ce72115b08a3048977c90e82ae6202039a3db",
+  "url": "https://raw.githubusercontent.com/K-Minh99/Bike-Screen-Update/e99440fba4a72a3bf50139b64c4dffb2962acc52/firmware.bin",
+  "released_at": "2026-11-25T17:42:09+00:00",
+  "notes": "1200 mAh battery display tuning: stable charger-done status confirms 100 percent; charging percentage pace is scaled for the smaller cell and battery diagnostics are expanded."
 }

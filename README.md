@@ -2,14 +2,14 @@
 
 OTA artifacts for TPMS Main, ESP32 with the screenBike 8 MiB partition layout.
 
-- Firmware: **v1.2.31**, build **2026112501**.
-- Binary size: **2544784 bytes**.
+- Firmware: **v1.2.32**, build **2026112601**.
+- Binary size: **2544880 bytes**.
 - Compatible SUB protocol: **2**.
 - Firmware source is maintained locally and is not published here.
 
 ## Current release
 
-AP opens on battery during a trip and its 10-second summary. Parked access still needs the charger. Tire pressure and AP alarm limits can be displayed in bar or PSI.
+1200 mAh battery display tuning: stable charger-done status confirms 100 percent; charging percentage pace is scaled for the smaller cell and battery diagnostics are expanded.
 
 AP Display settings let you choose any of 34 live screens: Compact/Trend plus
 15 new pairs, including calendar, clocks, instruments and voltage dashboards.
@@ -44,7 +44,7 @@ and SHA-256. Its firmware URL is pinned to an immutable commit so a newer
 publication cannot change a download already being installed. Main verifies
 HTTPS, size and SHA-256 before selecting the new application partition.
 
-Current binary SHA-256: `1d2eeeb2aabe1af4b98a315d0a52ff26bff26ab68bc9d82954df904c9dcfa3db`.
+Current binary SHA-256: `c27b771335a207349c0d2be38a1ce72115b08a3048977c90e82ae6202039a3db`.
 
 This build was compiled for Main. Successful OTA and Wi-Fi/AP behavior still
 need confirmation on the actual board.
